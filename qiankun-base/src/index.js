@@ -9,7 +9,7 @@ import { registerMicroApps, start } from 'qiankun';
 registerMicroApps([
   {
     name: 'vueApp',
-    entry: '//localhost:8082',
+    entry: '//localhost:8081',
     container: '#container',
     activeRule: '/app-vue',
   },

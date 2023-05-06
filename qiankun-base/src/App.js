@@ -37,7 +37,7 @@ const App = () => {
         <Content style={{ margin: '16px' }}>
           <div id="container" className="site-layout-background" style={{ minHeight: 360 }}></div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>This Project ©2021 Created by DiDi</Footer>
+        <Footer style={{ textAlign: 'center' }}>This Project ©2023 Created by jan</Footer>
       </Layout>
     </Layout>
     </BrowserRouter>

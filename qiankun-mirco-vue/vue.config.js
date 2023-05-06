@@ -1,20 +1,16 @@
-const { name } = require("./package");
-const { defineConfig } = require('@vue/cli-service')
-// module.exports = defineConfig({
-//   transpileDependencies: true
-// })
-
-module.exports = defineConfig({
+const { name } = require('./package');
+module.exports = {
   devServer: {
     headers: {
-      "Access-Control-Allow-Origin": "*",
+      'Access-Control-Allow-Origin': '*',
     },
   },
   configureWebpack: {
-    // output: {
-    //   library: `${name}-[name]`,
-    //   libraryTarget: "umd", // 把微应用打包成 umd 库格式
-    //   jsonpFunction: `webpackJsonp_${name}`,
-    // },
+    output: {
+      library: `${name}-[name]`,
+      libraryTarget: 'umd', // 把微应用打包成 umd 库格式
+      chunkLoadingGlobal: `webpackJsonp_${name}`
+    },
   },
-})
+};
+// jsonpFunction: `webpackJsonp_${name}`,
